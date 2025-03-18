@@ -1,0 +1,53 @@
+
+<style>
+    .shine-button {
+      position: relative;
+      overflow: hidden;
+    }
+   
+    .shine-button .shine {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.767), transparent);
+      transform: skewX(-25deg);
+      animation: shine 2s infinite;
+    }
+  
+    @keyframes shine {
+      0% {
+        left: -100%;
+      }
+      50% {
+        left: 100%;
+      }
+      100% {
+        left: 110%;
+      }
+    }
+</style>
+    <header class="bg-[#11253e] border-b fixed w-full z-10 top-0">
+        <div class="container mx-auto flex items-center justify-between py-2 px-4">
+         
+          <div class="flex items-center space-x-4">
+       
+            <div class="text-2xl font-bold text-yellow-500">
+                <img src="/images/my-logo.png" alt="logo" class="w-10 h-auto ms-8"> 
+            </div>
+      
+          </div>
+          <div class="">
+            
+            <button onclick="window.location.href='https://google.com';" class="shine-button bg-gradient-to-r from-[#fcdb3c] to-[#f2af1a] text-black py-2 px-8 rounded cursor-pointer" >
+                Get Support
+                <span class="shine"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <br>
+      <br>
+      <br>
+    
